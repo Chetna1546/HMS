@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Create an Appointment</title> 
+</head>
+<body>
+    <div class="container">
+        <header>Outpatient Appointment</header>
+
+        <form action="createappointments.jsp" method="post">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Create an Appointment</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Username</label>
+                            <input type="text" placeholder="Enter Username" name="uname" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Visiting Patient's Name</label>
+                            <input type="text" placeholder="Enter the name" name="vname" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Date</label>
+                            <input type="date" placeholder="Enter the date" name="date" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Time</label>
+                            <select name="time" required>
+                                <option disabled selected>Select the Visiting Time</option>
+                                <option>Forenoon</option>
+                                <option>Afternoon</option>
+                                <option>Evening</option>
+                            </select>
+                        </div>
+                        <div class="input-field">
+                            <label>Department</label>
+                            <select name="dept" required>
+                                <option disabled selected>Select the Department</option>
+                                <option>General Medicine</option>
+                                <option>ENT</option>
+                                <option>Neurology</option>
+                                <option>Cardiology</option>
+                                <option>Gastrology</option>
+                                <option>Orthopaedics</option>
+                                <option>Padeatrics</option>
+                                <option>Urology</option>
+                                <option>Oncology</option>
+                                <option>Nephrology</option>
+                                <option>Pulmonology</option>
+                                <option>Rheumanology</option>
+                                <option>Radiology</option>
+                                <option>Psychiatry</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button class="sumbit">
+                        <span class="btnText">Submit</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
